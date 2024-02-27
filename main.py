@@ -1,9 +1,13 @@
 import streamlit as st
 from msal import PublicClientApplication
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 st.title("Hello World")
 app = PublicClientApplication(
-        client_id="3d4e4919-55b9-4227-9ad0-207a05fe0f58", 
+        client_id=os.environ['MS_APP_SERVICE_CLIENT_ID'], 
         authority='https://login.microsoftonline.com/common'
         # client_secret="sMi8Q~VYZKjw323~fCr5uVyWhcGMBnVv3ljC.cnQ"
     )
