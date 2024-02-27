@@ -1,0 +1,11 @@
+python-dotenv
+streamlit==1.31.0
+streamlit-chat==0.0.2.2
+langchain==0.1.0
+langchain_openai==0.0.2
+azure-search-documents==11.4.0b8 
+azure-identity==1.15.0
+msal==1.26.0
+pymongo==4.6.1
+pytz==2023.3.post1
+requests==2.31.0
